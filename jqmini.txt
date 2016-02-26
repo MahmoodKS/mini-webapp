@@ -1,0 +1,13 @@
+body
+	div.header
+		p->jQ miniwebapp
+	div.container
+		div.description
+		div.products	
+			8 spans
+				img
+				span(transparent)
+					p	
+		div.visual weight
+			x span
+		span.total
