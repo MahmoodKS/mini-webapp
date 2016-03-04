@@ -1,0 +1,62 @@
+body
+{
+  /*border: 2px solid black;*/
+  background-color: #FFFFFF;
+  margin: 0;
+  margin: -125px 5px 0px 5px;
+}
+
+div.header
+{
+  background-color: #93C45F;
+  width: 100%;
+  height: 200px;
+  border-top-right-radius: 70px;
+  border-top-left-radius: 70px;
+}
+
+div.header p
+{
+  /*margin: 100px auto;*/
+  text-align: center;
+  font-size: 140px;
+  color: white;
+}
+
+div.container
+{
+  width: 80%;
+  margin: 1px auto;
+}
+
+div.description
+{
+  display: inline-block;
+  text-align: center;
+  font-size: 30px;
+  width: 19%;
+  float: right;
+  border-left: 1px solid red;
+  height: 500px;
+  margin-top:40px;
+  padding: 5px 10px;
+}
+
+.products
+{
+  display: inline-block;
+  float: left;
+  width: 79%;
+  border-bottom: 1px dashed #474B4D;
+}
+
+.product
+{
+  display: block;
+  float: left;
+  width: 255px;
+  height: 255px;
+  margin: 20px;
+  background-color: #D6D6A7;
+  border-radius: 5px;
+}
