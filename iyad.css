@@ -1,62 +1,69 @@
-body
-{
-  /*border: 2px solid black;*/
-  background-color: #FFFFFF;
-  margin: 0;
-  margin: -125px 5px 0px 5px;
-}
-
-div.header
-{
-  background-color: #93C45F;
-  width: 100%;
-  height: 200px;
-  border-top-right-radius: 70px;
-  border-top-left-radius: 70px;
-}
-
-div.header p
-{
-  /*margin: 100px auto;*/
-  text-align: center;
-  font-size: 140px;
-  color: white;
-}
-
-div.container
-{
-  width: 80%;
-  margin: 1px auto;
-}
-
-div.description
-{
-  display: inline-block;
-  text-align: center;
-  font-size: 30px;
-  width: 19%;
-  float: right;
-  border-left: 1px solid red;
-  height: 500px;
-  margin-top:40px;
-  padding: 5px 10px;
-}
-
-.products
-{
-  display: inline-block;
-  float: left;
-  width: 79%;
-  border-bottom: 1px dashed #474B4D;
-}
-
-.product
-{
-  display: block;
-  float: left;
-  width: 255px;
-  height: 255px;
-  margin: 20px;
-  background-color: #D6D6A7;
-  border-radius: 5px;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>mini-webapp</title>
+    <script src="jquery-2.2.0.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="index-page.css">
+</head>
+<body>
+<!-- header -->
+<div class="header">
+    <p>Webhook</p>
+</div>
+<!-- container -->
+<div class="container">
+    <div class="description">
+        choose a product to show description
+    </div>
+    <div class="products">
+        <!-- jq will loop over the items and insert them here -->
+        <span class="product"><!-- a single product template -->
+          <img src="" alt=""class="img" />
+          <span class="transparent"></span>
+          <p class="price"></p>
+        </span>
+        <span class="product"><!-- a single product template -->
+          <img src="" alt="" class="img"/>
+          <span class="transparent"></span>
+          <p class="price"></p>
+        </span>
+        <span class="product"><!-- a single product template -->
+          <img src="" alt=""class="img" />
+          <span class="transparent"></span>
+          <p class="price"></p>
+        </span>
+        <span class="product"><!-- a single product template -->
+          <img src="" alt="" class="img"/>
+          <span class="transparent"></span>
+          <p class="price"></p>
+        </span>
+        <span class="product"><!-- a single product template -->
+          <img src="" alt=""class="img" />
+          <span class="transparent" ></span>
+          <p class="price"></p>
+        </span>
+        <span class="product"><!-- a single product template -->
+          <img src="" alt=""class="img" />
+          <span class="transparent"></span>
+          <p class="price"></p>
+        </span>
+        <span class="product"><!-- a single product template -->
+          <img src="" alt=""class="img" />
+          <span class="transparent"></span>
+          <p class="price"></p>
+        </span>
+        <span class="product"><!-- a single product template -->
+          <img src="" alt="" class="img"/>
+          <span class="transparent"></span>
+          <p class="price"></p>
+        </span>
+        <div class="visual-weight">
+            <!-- jq will loop over types and calculate the number of checked out items -->
+            <span class="progress-of-type"></span> <!-- a single progress type -->
+        </div>
+        <span class="total"></span>
+    </div>
+</div>
+</body>
+</html>
