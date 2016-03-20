@@ -11,21 +11,21 @@ $(document).ready(function(){
       name: 'TV',
       type: 'Electronics',
       price: '$500',
-      description: 'An AbuSamaha trademark. Sizes: s, m, l, xl. Colors: blue, red, white, black.',
+      description: 'Electronics An AbuSamaha trademark. Sizes: s, m, l, xl. Colors: blue, red, white, black.',
       weight: 100,
     },
     {
       name: 'Labtop',
       type: 'Electronics',
       price: '$1000',
-      description: 'An AbuSamaha trademark. Sizes: s, m, l, xl. Colors: blue, red, white, black.',
+      description: 'Labtop An AbuSamaha trademark. Sizes: s, m, l, xl. Colors: blue, red, white, black.',
       weight: 50,
     },
     {
       name: 'Cap',
       type: 'Clothes',
       price: '$5',
-      description: 'An AbuSamaha trademark. Sizes: s, m, l, xl. Colors: blue, red, white, black.',
+      description: ' Cap An AbuSamaha trademark. Sizes: s, m, l, xl. Colors: blue, red, white, black.',
       weight: 2,
     },
     {
@@ -33,7 +33,7 @@ $(document).ready(function(){
       type: 'Books',
       price: '$15',
       weight: 10,
-      description: 'An AbuSamaha trademark. Sizes: s, m, l, xl. Colors: blue, red, white, black.',
+      description: 'Charli An AbuSamaha trademark. Sizes: s, m, l, xl. Colors: blue, red, white, black.',
     },
     {
       name: 'Need 4 Speed',
@@ -57,20 +57,18 @@ $(document).ready(function(){
       weight: 70,
     }
   ];
+  var edge = $('.products').innerWidth();
 
   products.forEach(function(value, key){
     $('.items').append('<span class="product"><img src="" alt="" /><span class="transparent"></span><p class="price">'+value.price+'</p></span>');
   });
 
-  $('.product').on('click',function(e){
-    console.log('hi');
-  });
+  $('.product').css({width: edge*0.2, height: edge*0.2});
 
-  //
-  // <span class="product">
-  //   <img src="" alt="" />
-  //   <span class="transparent"></span>
-  //   <p class="price"></p>
-  // </span>
+  $('.product').on('click',function(e){
+    var index = $(this).parent().children().index($(this));
+    var description = products[index].description;
+    $('.description').html(description);
+  });
 
 });
