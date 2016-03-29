@@ -61,3 +61,36 @@ div.description
   background-color: #D6D6A7;
   border-radius: 5px;
 }
+
+.product img
+{
+  margin-top: 10px;
+}
+
+.transparent
+{
+  background-color: #155e1c;
+  width: 100%;
+  height: 100%;
+  opacity: 0.0;
+}
+
+.visual-weight
+{
+  clear: left;
+  background-color: #a6b9ac;
+  opacity: 0.5;
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.progress-of-type
+{
+  display: inline-block;
+  height: 20px;
+  /*width: 100px;*/
+  background-color: red;
+  text-align: center;
+  color: white;
+}
